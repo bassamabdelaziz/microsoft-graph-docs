@@ -6,11 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new QueryOption("$skip", "5"));
-
 IWorkbookTableRowCollectionPage rows = graphClient.me().drive().items("{id}").workbook().tables("{id|name}").rows()
-	.buildRequest( requestOptions )
+	.buildRequest()
+	.skip(5)
 	.top(5)
 	.get();
 

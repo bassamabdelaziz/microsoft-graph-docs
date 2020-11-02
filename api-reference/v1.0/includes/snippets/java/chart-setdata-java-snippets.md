@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-String sourceData = "sourceData-value";
+JsonElement sourceData = JsonParser.parseString("sourceData-value");
 
 String seriesBy = "seriesBy-value";
 

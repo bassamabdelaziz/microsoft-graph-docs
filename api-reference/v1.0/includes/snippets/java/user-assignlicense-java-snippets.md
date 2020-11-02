@@ -11,7 +11,7 @@ AssignedLicense addLicenses = new AssignedLicense();
 LinkedList<String> disabledPlansList = new LinkedList<String>();
 disabledPlansList.add("11b0131d-43c8-4bbb-b2c8-e80f9a50834a");
 addLicenses.disabledPlans = disabledPlansList;
-addLicenses.skuId = "guid";
+addLicenses.skuId = UUID.fromString("guid");
 
 addLicensesList.add(addLicenses);
 

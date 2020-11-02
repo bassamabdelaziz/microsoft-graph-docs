@@ -17,11 +17,11 @@ address.postalCode = "98052";
 address.countryOrRegion = "USA";
 place.address = address;
 OutlookGeoCoordinates geoCoordinates = new OutlookGeoCoordinates();
-geoCoordinates.altitude = null;
-geoCoordinates.latitude = 47.0;
-geoCoordinates.longitude = -122.0;
-geoCoordinates.accuracy = null;
-geoCoordinates.altitudeAccuracy = null;
+geoCoordinates.altitude = nulld;
+geoCoordinates.latitude = 47.0d;
+geoCoordinates.longitude = -122.0d;
+geoCoordinates.accuracy = nulld;
+geoCoordinates.altitudeAccuracy = nulld;
 place.geoCoordinates = geoCoordinates;
 
 graphClient.places("Building1RroomList@contoso.onmicrosoft.com")

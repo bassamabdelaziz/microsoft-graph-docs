@@ -10,7 +10,7 @@ WorkbookTableColumn workbookTableColumn = new WorkbookTableColumn();
 workbookTableColumn.id = 99;
 workbookTableColumn.name = "name-value";
 workbookTableColumn.index = 99;
-workbookTableColumn.values = "values-value";
+workbookTableColumn.values = JsonParser.parseString("\"values-value\");
 
 graphClient.me().drive().items("{id}").workbook().tables("{id|name}").columns()
 	.buildRequest()

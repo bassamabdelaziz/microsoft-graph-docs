@@ -8,7 +8,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 WorkbookTableRow workbookTableRow = new WorkbookTableRow();
 workbookTableRow.index = 99;
-workbookTableRow.values = "values-value";
+workbookTableRow.values = JsonParser.parseString("\"values-value\");
 
 graphClient.me().drive().items("{id}").workbook().tables("{id|name}").rows("{index}")
 	.buildRequest()

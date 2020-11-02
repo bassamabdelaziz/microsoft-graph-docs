@@ -21,7 +21,7 @@ stream1.content = "<li>new-page-content</li>";
 
 streamList.add(stream1);
 
-graphClient.customRequest("/me/onenote/pages/{id}/content", Stream.class)
+graphClient.customRequest("/me/onenote/pages/{id}/content", InputStream.class)
 	.buildRequest()
 	.patch(stream);
 

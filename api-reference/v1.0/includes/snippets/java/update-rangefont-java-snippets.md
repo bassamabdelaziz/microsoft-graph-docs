@@ -11,7 +11,7 @@ workbookRangeFont.bold = true;
 workbookRangeFont.color = "color-value";
 workbookRangeFont.italic = true;
 workbookRangeFont.name = "name-value";
-workbookRangeFont.size = 99;
+workbookRangeFont.size = 99d;
 workbookRangeFont.underline = "underline-value";
 
 graphClient.me().drive().items("{id}").workbook().names("{name}")

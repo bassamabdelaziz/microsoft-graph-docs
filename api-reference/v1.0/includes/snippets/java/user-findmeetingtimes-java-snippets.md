@@ -20,11 +20,11 @@ attendees.emailAddress = emailAddress;
 attendeesList.add(attendees);
 
 LocationConstraint locationConstraint = new LocationConstraint();
-locationConstraint.isRequired = "false";
-locationConstraint.suggestLocation = "false";
+locationConstraint.isRequired = false;
+locationConstraint.suggestLocation = false;
 LinkedList<LocationConstraintItem> locationsList = new LinkedList<LocationConstraintItem>();
 LocationConstraintItem locations = new LocationConstraintItem();
-locations.resolveAvailability = "false";
+locations.resolveAvailability = false;
 locations.displayName = "Conf room Hood";
 locationsList.add(locations);
 locationConstraint.locations = locationsList;
@@ -46,11 +46,11 @@ timeConstraint.timeSlots = timeSlotsList;
 
 boolean isOrganizerOptional = false;
 
-String meetingDuration = "PT1H";
+MeetingTimeSuggestionsResult meetingDuration = DatatypeFactory.newInstance().newDuration("PT1H");
 
 boolean returnSuggestionReasons = true;
 
-String minimumAttendeePercentage = "100";
+MeetingTimeSuggestionsResult minimumAttendeePercentage = 100d;
 
 graphClient.me()
 	.findMeetingTimes(attendeesList,locationConstraint,timeConstraint,meetingDuration,null,isOrganizerOptional,returnSuggestionReasons,minimumAttendeePercentage)

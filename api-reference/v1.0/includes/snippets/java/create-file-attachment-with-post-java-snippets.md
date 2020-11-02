@@ -14,7 +14,7 @@ post.body = body;
 LinkedList<Attachment> attachmentsList = new LinkedList<Attachment>();
 FileAttachment attachments = new FileAttachment();
 attachments.name = "Another file as attachment";
-attachments.contentBytes = "VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu";
+attachments.contentBytes = Base64.getDecoder().decode("VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu");
 attachmentsList.add(attachments);
 post.attachments = attachmentsList;
 

@@ -8,8 +8,8 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 WorkbookChart workbookChart = new WorkbookChart();
 workbookChart.id = "id-value";
-workbookChart.height = 99;
-workbookChart.left = 99;
+workbookChart.height = 99d;
+workbookChart.left = 99d;
 
 graphClient.me().drive().items("{id}").workbook().worksheets("{id|name}").charts()
 	.buildRequest()

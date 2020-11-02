@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IDriveItemCollectionPage recent = graphClient.me().drive()
+IDriveRecentCollectionPage recent = graphClient.me().drive()
 	.recent()
 	.buildRequest()
 	.get();

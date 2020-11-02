@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-String startCell = "startCell-value";
+JsonElement startCell = JsonParser.parseString("startCell-value");
 
-String endCell = "endCell-value";
+JsonElement endCell = JsonParser.parseString("endCell-value");
 
 graphClient.me().drive().items("{id}").workbook().worksheets("{id|name}").charts("{name}")
 	.setPosition(startCell,endCell)

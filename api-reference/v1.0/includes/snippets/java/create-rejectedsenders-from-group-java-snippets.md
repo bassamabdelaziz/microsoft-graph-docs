@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 DirectoryObject directoryObject = new DirectoryObject();
-directoryObject.Id = "alexd@contoso.com";
+directoryObject.id = "alexd@contoso.com";
 
 graphClient.groups("{id}").rejectedSenders().references()
 	.buildRequest()

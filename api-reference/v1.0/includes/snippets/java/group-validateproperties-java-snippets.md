@@ -10,7 +10,7 @@ String displayName = "Myprefix_test_mysuffix";
 
 String mailNickname = "Myprefix_test_mysuffix";
 
-String onBehalfOfUserId = "onBehalfOfUserId-value";
+UUID onBehalfOfUserId = UUID.fromString("onBehalfOfUserId-value");
 
 graphClient.groups("{id}")
 	.validateProperties(displayName,mailNickname,onBehalfOfUserId)

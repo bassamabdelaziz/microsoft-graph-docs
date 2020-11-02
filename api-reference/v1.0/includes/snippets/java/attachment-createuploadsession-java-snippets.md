@@ -9,7 +9,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 AttachmentItem attachmentItem = new AttachmentItem();
 attachmentItem.attachmentType = AttachmentType.FILE;
 attachmentItem.name = "flower";
-attachmentItem.size = 3483322;
+attachmentItem.size = 3483322L;
 
 graphClient.me().messages("AAMkADI5MAAIT3drCAAA=").attachments()
 	.createUploadSession(attachmentItem)

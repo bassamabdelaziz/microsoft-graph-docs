@@ -8,7 +8,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 CalendarGroup calendarGroup = new CalendarGroup();
 calendarGroup.name = "name-value";
-calendarGroup.classId = "classId-value";
+calendarGroup.classId = UUID.fromString("classId-value");
 calendarGroup.changeKey = "changeKey-value";
 
 graphClient.me().calendarGroups()
